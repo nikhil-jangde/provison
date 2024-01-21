@@ -1,6 +1,7 @@
 import React from 'react';
 import { IoIosLogOut } from "react-icons/io";
 import { useNavigate } from 'react-router-dom';
+import Pro from '../Images/pro.png'
 
 function Navbar() {
   const navigate = useNavigate();
@@ -11,7 +12,7 @@ function Navbar() {
       <div>
         {/* Logo image with a clickable behavior to navigate to the products page */}
         <img
-          src="http://www.hindigraphics.in/wp-content/uploads/2019/01/pro.png"
+          src={Pro}
           alt="Logo"
           className="h-20 cursor-pointer"
           onClick={() => { navigate('/products') }}

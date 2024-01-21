@@ -2,6 +2,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import '../App.css';
 import { useNavigate } from 'react-router-dom';
+import Pro from '../Images/pro.png'
 
 const LoginPage = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
@@ -65,7 +66,7 @@ const LoginPage = () => {
           <div className='w-full flex bg-violet-500 justify-center items-center'>
             <div>
               <h1 className='text-center text-2xl font-bold '>Welcome to <span className='rounded-[50%] p-2 bg-white'>🙏</span></h1>
-              <img className='h-42' src="http://www.hindigraphics.in/wp-content/uploads/2019/01/pro.png" alt="Logo" />
+              <img className='h-42' src={Pro} alt="Logo" />
             </div>
           </div>
           <div className='flex w-full p-14 justify-center items-center '>

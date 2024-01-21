@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
+import Pro from '../Images/pro.png'
 
 const AboutUsPage = () => {
   return (
@@ -32,8 +33,7 @@ const AboutUsPage = () => {
           {/* Right side - Image */}
           <div className="flex justify-center items-center">
             <img
-              src="http://www.hindigraphics.in/wp-content/uploads/2019/01/pro.png"
-              alt="About Us"
+              src={Pro}             alt="About Us"
               className="rounded-lg"
             />
           </div>
